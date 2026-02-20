@@ -7,10 +7,10 @@ export const experienceData = [
     startDate: '2022',
     endDate: 'Present',
     current: true,
-    logo: '/assets/companies/samsung.png', // TODO: Add company logo
+    logo: 'assets/companies/samsung.png',
     description: 'Leading cross-functional development teams and delivering mobile & backend solutions for Samsung Indonesia.',
     achievements: [
-      'Led a cross-functional team of 4 developers to design, implement, and operate 5+ mobile and web applications for Samsung Indonesia, managing roadmap, sprint delivery, and technical design decisions',
+      'Led a cross-functional team of 5 developers to design, implement, and operate 5+ mobile and web applications for Samsung Indonesia, managing roadmap, sprint delivery, and technical design decisions',
       'Enhanced app responsiveness by 30% through deep optimization of caching layers, eliminating unnecessary recomposition in UI layers, refactoring Retrofit call structure, and implementing efficient background data sync',
       'Designed and implemented scalable backend services (Spring Boot / Node.js) and RESTful APIs supporting tens of thousands of daily requests, improving API uptime and reducing average error rate',
       'Reduced post-release defects by 25% through standardized code review processes, unit/integration test introduction, and CI/CD gating with Jenkins and automated test suites',
@@ -28,7 +28,7 @@ export const experienceData = [
     startDate: '2018',
     endDate: '2019',
     current: false,
-    logo: '/assets/companies/ministry.png', // TODO: Add company logo
+    logo: 'assets/companies/ministry.png',
     description: 'Developed embedded systems and instrumentation software for research projects.',
     achievements: [
       'Developed embedded and server components for speed measurement and track timing instrumentation, improving data reliability and reducing measurement latency through protocol optimizations',
@@ -45,7 +45,7 @@ export const experienceData = [
     startDate: '2017',
     endDate: '2017',
     current: false,
-    logo: '/assets/companies/xirka.png', // TODO: Add company logo
+    logo: 'assets/companies/xirka.png',
     description: 'Developed Bluetooth-enabled Smart Card Reader prototype with secure authentication.',
     achievements: [
       'Implemented a Bluetooth Smart Card Reader prototype (SAM module) and an Android configuration UI, developed secure communication channels and performed extensive interoperability testing',

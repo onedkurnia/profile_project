@@ -1,8 +1,8 @@
 import { 
-  SiKotlin, SiJava, SiTypescript, SiJavascript, SiPython, SiGo,
+  SiKotlin, SiOpenjdk, SiTypescript, SiJavascript, SiPython, SiGo,
   SiSpringboot, SiExpress, SiAndroid, SiFirebase, SiPostgresql,
   SiMysql, SiMongodb, SiElasticsearch, SiDocker, SiKubernetes,
-  SiJenkins, SiAmazonaws, SiGit, SiReact, SiNodedotjs
+  SiJenkins, SiAmazonwebservices, SiGit, SiReact, SiNodedotjs
 } from 'react-icons/si';
 
 export const skillsData = [
@@ -10,7 +10,7 @@ export const skillsData = [
     category: 'Languages & Frameworks',
     skills: [
       { name: 'Kotlin', icon: SiKotlin, color: '#7F52FF' },
-      { name: 'Java', icon: SiJava, color: '#007396' },
+      { name: 'Java', icon: SiOpenjdk, color: '#007396' },
       { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
       { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
       { name: 'Python', icon: SiPython, color: '#3776AB' },
@@ -31,7 +31,7 @@ export const skillsData = [
       { name: 'Glide/Picasso', icon: SiAndroid, color: '#3DDC84' },
       { name: 'Offline Caching', icon: SiAndroid, color: '#3DDC84' },
       { name: 'Espresso', icon: SiAndroid, color: '#3DDC84' },
-      { name: 'JUnit', icon: SiJava, color: '#25A162' }
+      { name: 'JUnit', icon: SiOpenjdk, color: '#25A162' }
     ]
   },
   {
@@ -59,7 +59,7 @@ export const skillsData = [
       { name: 'Docker', icon: SiDocker, color: '#2496ED' },
       { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5' },
       { name: 'Jenkins', icon: SiJenkins, color: '#D24939' },
-      { name: 'AWS', icon: SiAmazonaws, color: '#FF9900' },
+      { name: 'AWS', icon: SiAmazonwebservices, color: '#FF9900' },
       { name: 'Git', icon: SiGit, color: '#F05032' },
       { name: 'CI/CD Pipelines', icon: SiJenkins, color: '#D24939' }
     ]
