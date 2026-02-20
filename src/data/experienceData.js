@@ -1,56 +1,50 @@
 export const experienceData = [
   {
     id: 1,
-    company: 'Samsung R&D Institute Indonesia',
-    position: 'Software Developer Lead',
+    company: 'Harita Nickel',
+    position: 'Paramedic',
     location: 'Jakarta, Indonesia',
-    startDate: '2022',
+    startDate: 'July 2023',
     endDate: 'Present',
     current: true,
-    logo: '/assets/companies/samsung.png', // TODO: Add company logo
-    description: 'Leading cross-functional development teams and delivering mobile & backend solutions for Samsung Indonesia.',
-    achievements: [
-      'Led a cross-functional team of 4 developers to design, implement, and operate 5+ mobile and web applications for Samsung Indonesia, managing roadmap, sprint delivery, and technical design decisions',
-      'Enhanced app responsiveness by 30% through deep optimization of caching layers, eliminating unnecessary recomposition in UI layers, refactoring Retrofit call structure, and implementing efficient background data sync',
-      'Designed and implemented scalable backend services (Spring Boot / Node.js) and RESTful APIs supporting tens of thousands of daily requests, improving API uptime and reducing average error rate',
-      'Reduced post-release defects by 25% through standardized code review processes, unit/integration test introduction, and CI/CD gating with Jenkins and automated test suites',
-      'Implemented CI/CD pipelines and containerized deployments with Docker and AWS, cutting deployment lead time and increasing release reliability',
-      'Collaborated with UX/UI and QA to raise CSAT and reduce critical issues in production, coordinated on-call rotations and incident post-mortems to drive continuous improvement',
-      'Responsible for delivering and maintaining two Google Play Store apps: Salaam and SLime, including release management, crash analytics remediation, and Play Store compliance'
-    ],
-    techStack: ['Kotlin', 'Spring Boot', 'Node.js', 'Android', 'Docker', 'AWS', 'Jenkins', 'PostgreSQL', 'Firebase']
+    description: [
+      'Performed regular mini medical check-ups for managerial and operational staff, providing preventive and rehabilitative health education.',
+      'Collaborated with HR, management, and HSE teams to organize certified first aid training sessions.',
+      'Delivered prompt medical attention for workplace injuries and health complaints.',
+      'Maintained employee health records in compliance with occupational health regulations.',
+      'Supported internal audits and workplace inspections.',
+      'Coordinated health promotion activities including blood donation drives, medical screenings, and health talks.'
+    ]
   },
   {
     id: 2,
-    company: 'Ministry of Research, Technology and Higher Education',
-    position: 'Software and Digital Communication Developer',
-    location: 'Bandung, West Java, Indonesia',
-    startDate: '2018',
-    endDate: '2019',
+    company: 'Homecare by Dr. Timothy',
+    position: 'Nurse (Part-Time)',
+    location: 'Jakarta, Indonesia',
+    startDate: 'March 2021',
+    endDate: 'June 2023',
     current: false,
-    logo: '/assets/companies/ministry.png', // TODO: Add company logo
-    description: 'Developed embedded systems and instrumentation software for research projects.',
-    achievements: [
-      'Developed embedded and server components for speed measurement and track timing instrumentation, improving data reliability and reducing measurement latency through protocol optimizations',
-      'Integrated data transmission pipelines and built mobile dashboards to visualize results for researchers and operators',
-      'Conducted field testing and iterative improvements, ensuring system robustness under production conditions'
-    ],
-    techStack: ['Python', 'Embedded Systems', 'IoT', 'Node.js', 'Android', 'Data Visualization']
+    description: [
+      'Provided in-home nursing care including vital signs monitoring, wound care, IV therapy, and medication administration.',
+      'Educated patients and families on home care procedures.',
+      'Coordinated with physicians and healthcare teams to update care plans.',
+      'Built strong patient rapport and achieved high satisfaction ratings.'
+    ]
   },
   {
     id: 3,
-    company: 'Xirka Silicon Technology',
-    position: 'Smart Card Reader Developer',
-    location: 'Bandung, West Java, Indonesia',
-    startDate: '2017',
-    endDate: '2017',
+    company: 'Sint Carolus Hospital',
+    position: 'Nurse',
+    location: 'Jakarta, Indonesia',
+    startDate: 'March 2021',
+    endDate: 'June 2023',
     current: false,
-    logo: '/assets/companies/xirka.png', // TODO: Add company logo
-    description: 'Developed Bluetooth-enabled Smart Card Reader prototype with secure authentication.',
-    achievements: [
-      'Implemented a Bluetooth Smart Card Reader prototype (SAM module) and an Android configuration UI, developed secure communication channels and performed extensive interoperability testing',
-      'Ensured compliance with security and industry standards by implementing controlled authentication flows'
-    ],
-    techStack: ['Android', 'Bluetooth', 'Java', 'Security', 'Cryptography']
+    description: [
+      'Performed routine wound care and dressing changes.',
+      'Administered oral, IV, and intramuscular medications and monitored patient responses.',
+      'Educated patients on disease management and self-care techniques.',
+      'Implemented infection control measures to reduce hospital-acquired infections.',
+      'Collaborated with interdisciplinary teams for optimized patient outcomes.'
+    ]
   }
 ];
