@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
-import { FiMenu, FiX, FiMail, FiLinkedin, FiGithub } from 'react-icons/fi';
+import { FiMenu, FiX, FiMail, FiLinkedin } from 'react-icons/fi';
 import { useScrollDirection } from '../../hooks/useScrollDirection';
 import { useScrollProgress } from '../../hooks/useScrollProgress';
 import { personalInfo } from '../../data/personalInfo';
@@ -15,9 +15,8 @@ const Navbar = () => {
     { name: 'Home', to: 'home' },
     { name: 'About', to: 'about' },
     { name: 'Skills', to: 'skills' },
-    { name: 'Projects', to: 'projects' },
-    { name: 'Publications', to: 'publications' },
     { name: 'Experience', to: 'experience' },
+    { name: 'Education', to: 'education' },
     { name: 'Contact', to: 'contact' }
   ];
 
@@ -26,7 +25,7 @@ const Navbar = () => {
       {/* Scroll Progress Bar */}
       <div className="fixed top-10 left-0 right-0 h-1 bg-slate-200 z-50">
         <motion.div
-          className="h-full bg-gradient-to-r from-primary-500 to-primary-700"
+          className="h-full bg-gradient-to-r from-primary-400 to-pink-500"
           style={{ width: `${scrollProgress}%` }}
           transition={{ duration: 0.1 }}
         />
@@ -47,7 +46,7 @@ const Navbar = () => {
               {/* Logo */}
               <Link to="home" smooth={true} duration={500} className="cursor-pointer">
                 <h1 className="text-2xl font-heading font-bold gradient-text">
-                  DENI ONE
+                  VINSENSIA
                 </h1>
               </Link>
 
@@ -87,17 +86,6 @@ const Navbar = () => {
                 >
                   <FiMail className="w-5 h-5" />
                 </a>
-                {personalInfo.github !== 'TODO' && (
-                  <a
-                    href={personalInfo.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-slate-600 hover:text-primary-500 transition-colors"
-                    aria-label="GitHub"
-                  >
-                    <FiGithub className="w-5 h-5" />
-                  </a>
-                )}
               </div>
 
               {/* Mobile Menu Button */}

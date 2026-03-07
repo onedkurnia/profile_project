@@ -10,7 +10,7 @@
   }
   
   body {
-    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+    @apply text-slate-900 font-sans antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -24,11 +24,6 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent;
-  }
-
-  /* Vincensia profile scoped overrides */
-  .vincensia-root .gradient-text {
     @apply bg-gradient-to-r from-primary-500 to-pink-600 bg-clip-text text-transparent;
   }
   

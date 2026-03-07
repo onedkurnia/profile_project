@@ -1,38 +1,32 @@
 import React from 'react';
-import Navbar from './components/layout/Navbar';
-import Toast from './components/ui/Toast';
-import { useToast } from './hooks/useToast';
-import Hero from './sections/Hero';
-import About from './sections/About';
-import Skills from './sections/Skills';
-import Projects from './sections/Projects';
-import Publications from './sections/Publications';
-import Experience from './sections/Experience';
-import Contact from './sections/Contact';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import ProfileSwitcher from './components/shared/ProfileSwitcher';
+import DeniApp from './DeniApp';
+import VincensiaApp from './vincensia/VincensiaApp';
 
 function App() {
-  const { toasts, removeToast } = useToast();
-
   return (
-    <div className="min-h-screen bg-slate-50">
-      <Navbar />
-      <Toast toasts={toasts} onRemove={removeToast} />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Publications />
-      <Experience />
-      <Contact />
+    <BrowserRouter basename="/profile_project">
+      {/* Fixed top bar for switching between profiles (40px / h-10) */}
+      <ProfileSwitcher />
 
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-slate-400 text-sm">&copy; {new Date().getFullYear()} Deni One · Jakarta, Indonesia</p>
-          <p className="text-slate-600 text-xs mt-1">Built with React & Tailwind CSS</p>
-        </div>
-      </footer>
-    </div>
+      {/* Offset content below the ProfileSwitcher bar */}
+      <div className="pt-10">
+        <Routes>
+          {/* Root → Deni's profile */}
+          <Route path="/" element={<Navigate to="/denione" replace />} />
+
+          {/* Deni One profile */}
+          <Route path="/denione/*" element={<DeniApp />} />
+
+          {/* Vincensia profile */}
+          <Route path="/vincensia/*" element={<VincensiaApp />} />
+
+          {/* Fallback → Deni's profile */}
+          <Route path="*" element={<Navigate to="/denione" replace />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
