@@ -1,24 +1,40 @@
-import { 
+import {
   SiKotlin, SiOpenjdk, SiTypescript, SiJavascript, SiPython, SiGo,
   SiSpringboot, SiExpress, SiAndroid, SiFirebase, SiPostgresql,
   SiMysql, SiMongodb, SiElasticsearch, SiDocker, SiKubernetes,
-  SiJenkins, SiAmazonwebservices, SiGit, SiReact, SiNodedotjs
+  SiJenkins, SiAmazonwebservices, SiGit, SiReact, SiNodedotjs,
+  SiNextdotjs, SiAngular, SiTailwindcss, SiAntdesign, SiRedux,
+  SiPostman, SiJira, SiHtml5, SiCss3, SiNginx
 } from 'react-icons/si';
 
 export const skillsData = [
   {
     category: 'Languages & Frameworks',
     skills: [
-      { name: 'Kotlin', icon: SiKotlin, color: '#7F52FF' },
       { name: 'Java', icon: SiOpenjdk, color: '#007396' },
+      { name: 'Kotlin', icon: SiKotlin, color: '#7F52FF' },
       { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
       { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
       { name: 'Python', icon: SiPython, color: '#3776AB' },
       { name: 'Go', icon: SiGo, color: '#00ADD8' },
+      { name: 'HTML5', icon: SiHtml5, color: '#E34F26' },
+      { name: 'CSS3', icon: SiCss3, color: '#1572B6' },
       { name: 'Spring Boot', icon: SiSpringboot, color: '#6DB33F' },
       { name: 'Express.js', icon: SiExpress, color: '#000000' },
       { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
-      { name: 'React', icon: SiReact, color: '#61DAFB' }
+      { name: 'JSP/JSTL', icon: SiOpenjdk, color: '#007396' },
+      { name: 'SAStruts/Seasar2', icon: SiOpenjdk, color: '#007396' }
+    ]
+  },
+  {
+    category: 'Frontend',
+    skills: [
+      { name: 'React', icon: SiReact, color: '#61DAFB' },
+      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+      { name: 'Angular', icon: SiAngular, color: '#DD0031' },
+      { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+      { name: 'Ant Design', icon: SiAntdesign, color: '#0170FE' },
+      { name: 'Redux', icon: SiRedux, color: '#764ABC' }
     ]
   },
   {
@@ -39,8 +55,9 @@ export const skillsData = [
     skills: [
       { name: 'REST API Design', icon: SiExpress, color: '#0ea5e9' },
       { name: 'Microservices', icon: SiDocker, color: '#2496ED' },
-      { name: 'OAuth/JWT', icon: SiExpress, color: '#000000' },
-      { name: 'Nginx', icon: SiExpress, color: '#009639' }
+      { name: 'Authentication', icon: SiExpress, color: '#000000' },
+      { name: 'SAStruts/Seasar2', icon: SiOpenjdk, color: '#007396' },
+      { name: 'Nginx', icon: SiNginx, color: '#009639' }
     ]
   },
   {
@@ -61,7 +78,9 @@ export const skillsData = [
       { name: 'Jenkins', icon: SiJenkins, color: '#D24939' },
       { name: 'AWS', icon: SiAmazonwebservices, color: '#FF9900' },
       { name: 'Git', icon: SiGit, color: '#F05032' },
-      { name: 'CI/CD Pipelines', icon: SiJenkins, color: '#D24939' }
+      { name: 'CI/CD Pipelines', icon: SiJenkins, color: '#D24939' },
+      { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
+      { name: 'JIRA', icon: SiJira, color: '#0052CC' }
     ]
   },
   {

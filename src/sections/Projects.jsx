@@ -71,6 +71,7 @@ export default function Projects() {
 
         {/* Project Cards */}
         <motion.div
+          key={activeCategory}
           className="grid md:grid-cols-2 gap-6"
           variants={staggerContainer}
           initial="initial"
@@ -88,13 +89,13 @@ export default function Projects() {
               <div className="h-44 bg-gradient-to-br from-primary-50 to-slate-100 flex items-center justify-center relative overflow-hidden">
                 {project.image ? (
                   <img
-                    src={project.image}
+                    src={`${import.meta.env.BASE_URL}${project.image}`}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover relative z-10"
                     onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                 ) : null}
-                {/* Placeholder overlay (hidden when image loads) */}
+                {/* Placeholder letter (visible only when image fails to load) */}
                 <div className="absolute inset-0 flex items-center justify-center text-primary-200 text-6xl font-bold select-none pointer-events-none">
                   {project.title.slice(0, 1)}
                 </div>

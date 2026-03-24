@@ -1,16 +1,85 @@
-# React + Vite
+# Deni Kurnia — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React and Vite. This site showcases my professional profile, skills, projects, publications, and work experience as a Software Developer with 4+ years at Samsung R&D Indonesia.
 
-Currently, two official plugins are available:
+**Live site:** [onedkurnia.github.io/profile_project](https://onedkurnia.github.io/profile_project)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio serves as a central hub for my professional identity, covering:
 
-## Expanding the ESLint configuration
+- **Hero** — Introduction with animated stats (years of experience, apps delivered, performance improvements)
+- **About** — Summary and background
+- **Skills** — Tech stack across languages, mobile, backend, databases, and DevOps
+- **Experience** — Professional work history
+- **Projects** — Highlighted projects (Salaam, SLime, Speed Measurement System, Smart Card Reader)
+- **Publications** — Research papers and technical writings
+- **Contact** — Ways to get in touch
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+### Core
+| Technology | Purpose |
+|---|---|
+| [React 19](https://react.dev/) | UI library |
+| [Vite](https://vitejs.dev/) | Build tool & dev server |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first styling |
+
+### Libraries
+| Library | Purpose |
+|---|---|
+| [Framer Motion](https://www.framer.com/motion/) | Animations & transitions |
+| [React Icons](https://react-icons.github.io/react-icons/) | Icon set (Si, Fa, etc.) |
+| [React Scroll](https://www.npmjs.com/package/react-scroll) | Smooth section scrolling |
+
+### Tooling
+| Tool | Purpose |
+|---|---|
+| [ESLint](https://eslint.org/) | Code linting |
+| [PostCSS](https://postcss.org/) | CSS processing |
+| [gh-pages](https://www.npmjs.com/package/gh-pages) | GitHub Pages deployment |
+
+---
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── layout/       # Navbar
+│   └── ui/           # Reusable components (Badge, Button, Card, Toast, SkeletonLoader)
+├── data/             # Static data (personalInfo, projects, skills, experience, etc.)
+├── hooks/            # Custom React hooks (useScrollDirection, useCountUp, etc.)
+├── sections/         # Page sections (Hero, About, Skills, Projects, ...)
+└── utils/            # Animation variants
+```
+
+---
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Deployment
+
+This project is deployed to GitHub Pages via the `gh-pages` package.
+
+```bash
+npm run deploy
+```
