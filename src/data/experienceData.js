@@ -1,12 +1,34 @@
 export const experienceData = [
   {
     id: 1,
+    company: 'RKS (Rakus Co., Ltd.)',
+    position: 'Software Project Lead',
+    location: 'Jakarta, Indonesia',
+    startDate: '2026',
+    endDate: 'Present',
+    current: true,
+    logo: 'assets/companies/rakus.png',
+    description: 'Leading cross-functional development teams through full project lifecycles, championing AI-assisted development practices.',
+    achievements: [
+      'Championed AI-assisted development practices across the team, guiding adoption of AI tooling into daily workflows and accelerating overall development velocity by approximately 60%',
+      'Led a cross-functional development team through full project lifecycles, consistently delivering within scope and on schedule while fostering a culture of ownership and continuous improvement',
+      'Partnered with product managers and stakeholders to break down business requirements into actionable technical specifications and architecture decisions, ensuring alignment between business goals and technical feasibility',
+      'Drove sprint planning, backlog prioritization, and task allocation to maintain steady delivery cadence across concurrent workstreams, adapting priorities in response to shifting requirements without sacrificing quality',
+      'Enforced code quality through rigorous code reviews with a focus on maintaining consistent standards, readability, and long-term maintainability ensuring every merge request met established architectural patterns and conventions',
+      'Safeguarded release stability by closely overseeing smoke testing processes, verifying critical user flows and edge cases before each deployment to minimize regression and production defects',
+      'Mentored junior developers through pair programming, design discussions, and structured feedback, building a more self-sufficient team with stronger problem-solving and code quality awareness',
+      'Proactively identified technical risks and bottlenecks, implementing mitigation strategies that prevented delivery delays and production incidents'
+    ],
+    techStack: ['JSP', 'JSTL', 'Java', 'Google Workspace']
+  },
+  {
+    id: 2,
     company: 'Samsung R&D Institute Indonesia',
     position: 'Software Developer Lead',
     location: 'Jakarta, Indonesia',
     startDate: '2022',
-    endDate: 'Present',
-    current: true,
+    endDate: '2026',
+    current: false,
     logo: 'assets/companies/samsung.png',
     description: 'Leading cross-functional development teams and delivering mobile & backend solutions for Samsung Indonesia.',
     achievements: [
@@ -21,7 +43,7 @@ export const experienceData = [
     techStack: ['Kotlin', 'Spring Boot', 'Node.js', 'Android', 'Docker', 'AWS', 'Jenkins', 'PostgreSQL', 'Firebase']
   },
   {
-    id: 2,
+    id: 3,
     company: 'Ministry of Research, Technology and Higher Education',
     position: 'Software and Digital Communication Developer',
     location: 'Bandung, West Java, Indonesia',
@@ -38,7 +60,7 @@ export const experienceData = [
     techStack: ['Python', 'Embedded Systems', 'IoT', 'Node.js', 'Android', 'Data Visualization']
   },
   {
-    id: 3,
+    id: 4,
     company: 'Xirka Silicon Technology',
     position: 'Smart Card Reader Developer',
     location: 'Bandung, West Java, Indonesia',
